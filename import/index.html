@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>ES10 新特性import()讲解</title>
+		<scirpt type="module" data-size="300"></script>
 	</head>
 	<body>
 		<script>
@@ -12,7 +13,7 @@
 
 		async function get(){
 			const module = await  import(`./index.js`);
-			debugger
+			console.log(module.age);					
 		}
 		
 		get();
