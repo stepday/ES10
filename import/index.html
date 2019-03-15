@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ES10 新特性import()讲解</title>
+	</head>
+	<body>
+		<script>
+// 			import(`./index.js`).then(module => {
+// 				console.log(module.default.name);
+// 			});
+
+		async function get(){
+			const module = await  import(`./index.js`);
+			debugger
+		}
+		
+		get();
+		</script>
+	</body>
+</html>
